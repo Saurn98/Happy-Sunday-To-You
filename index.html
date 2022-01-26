@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday wishes</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body id="image">
+	<center>
+		<br><br>
+		<!--- Create canvas --->
+		<canvas width="600" height="400" id="myCanvas"></canvas>
+		<br>
+		<!--- Create Bootstrap button --->
+		
+	    <button class="btn btn-warning btn-lg" id="main" onclick="playSound()" disabled>Dear</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<label id="rela" style="background-color: yellow; border-color: black;" for="name">Name Of The Person For Whom You Are Creating:   </label>
+		&nbsp;
+		&nbsp;
+		<input id="name" onchange="changed()">
+		<br>
+		<br>
+		<button id="reb" style="background-color: orange; width: 30; height: 30; border-color: black; font-weight: bold;" onclick="removes()">Done Giving The Name Of The Person</button>
+	</center>
+	<audio id="myAudio" src="bdayaudio.mp3"></audio>
+	<script src="main.js"></script>
+</body>
+</html>
